@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+<form method="post">
+    <dl>
+      {{ render_field(form.verso) }}
+      {{ render_field(form.poema) }}
+      {{ render_field(form.verso_posicion) }}
+    </dl>
+    <p><input type="submit" value="Register"/></p>
+  </form>
+{% endblock %}
