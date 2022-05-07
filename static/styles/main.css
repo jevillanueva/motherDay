@@ -1,0 +1,69 @@
+@media screen and (min-width: 601px) {
+    .poema.title {
+        font-size: 5vw;
+    }
+    .poema {
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 3.5vw;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .poema.title {
+        font-size: 10vw;
+    }
+    .poema {
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 8vw;
+    }
+  }
+
+.container {
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: fit-content;
+    padding: 3%;
+}
+
+.button{
+    background-color:transparent;
+	border-radius:22px;
+	border:1px solid #9d786c;
+	display:inline-block;
+	cursor:pointer;
+	color:#9d786c;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:9px 18px;
+    padding-bottom: 4px;
+	text-decoration:none;
+    margin-right: 3px;
+}
+.button:hover{
+    background-color:#9d786c;
+    border:1px solid #9d786c;
+    color:#EFE9E7;
+}
+.button:focus-visible{
+    background-color:#EFE9E7;
+    outline:2px solid #9d786c;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #9d786c;
+  }
+  
+  ::selection {
+      color: black;
+    background: #9d786c;
+  }

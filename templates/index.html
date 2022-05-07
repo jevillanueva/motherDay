@@ -1,1 +1,9 @@
-<h1>Hello</h1>
+{% extends "base.html" %}
+
+{% block extra_babel %}
+{% include 'poema.jsx' %}
+{% endblock %}
+
+{% block content %}
+    <Poema/>
+{% endblock %}
